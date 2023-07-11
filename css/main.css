@@ -451,21 +451,19 @@ dynamic
   }
 
   .swiper-slide {
+	
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	opacity: 1;
 	transition: opacity 1.5s;
-	position: relative;
-	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-	width: calc(100% / 3);
-  }
-  .swiper-slide:nth-child(2) {
+		/* clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); */
+	/* width: calc(100% / 3); */
+}
+  /*   .swiper-slide:nth-child(2) {
 	clip-path: none;
-  }
-  .swiper-slide img{
-	width: 150%;
-  }
+  } */
+
 
   
   .slide-item {
@@ -479,10 +477,6 @@ dynamic
 	margin-top: 10px;
 	color: #000000;
   }
-  
-
-  
-  
   .swiper-button-prev {
 	left: 10px;
   }
