@@ -236,18 +236,12 @@ nav ul li a {
 	text-align: left;
 	display: inline-block;
 }
-/* .promotion {
-	display: flex;
-	justify-content: left;
-	align-items: center;
-	padding: 2%;
-	
-  } */
   .promotion {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 2%;
+	background-color: #f4f4f4;
   }
   
   .promotion h3 {
@@ -266,20 +260,17 @@ nav ul li a {
 	margin-left: 10px;
 	width: 225px;
   }
-
-
 .row{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
 .last .row{
-		
-		display: flex;
-		flex-direction: row;
-		align-items: flex-start;
-	
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
 }
+
 /* ------------------------------------------------------------------------------
 	Banner
 -------------------------------------------------------------------------------*/
@@ -421,6 +412,7 @@ dynamic
 	background-color: #ffffff;
 	height: auto;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
@@ -442,6 +434,9 @@ dynamic
 	align-items: center;
 	margin-bottom: 6%;
   }
+  .content {
+	text-align: center;
+  }
   
   .swiper {
 	position: relative;
@@ -449,27 +444,42 @@ dynamic
 	height: 512px;
 	overflow: hidden;
   }
-
+  .swiper-wrapper {
+	display: flex;
+	align-items: center;
+  }
   .swiper-slide {
-	
+	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	opacity: 1;
 	transition: opacity 1.5s;
-		/* clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); */
-	/* width: calc(100% / 3); */
-}
-  /*   .swiper-slide:nth-child(2) {
-	clip-path: none;
-  } */
-
-
-  
+	width: calc(100%/3);
+	height: 100%;
+  }
+  .slide-item img {
+	max-width: 100%;
+	max-height: 100%;
+	margin: 0 auto;
+  }
   .slide-item {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
+	height: 100%;
+  }
+  .swiper-slide:not(.swiper-slide-active) img {
+	transform: scale(0.7); /* 비활성화된 슬라이드 이미지 크기 축소 */
+	opacity: 0.7; /* 비활성화된 슬라이드 이미지 투명도 조정 */
+	transition: transform 0.3s, opacity 0.3s; /* 트랜지션 효과 추가 */
+  }
+  
+  .swiper-slide.swiper-slide-active img {
+	transform: scale(1); /* 활성화된 슬라이드 이미지 원래 크기로 복원 */
+	opacity: 1; /* 활성화된 슬라이드 이미지 투명도 복원 */
+	transition: transform 0.3s, opacity 0.3s; /* 트랜지션 효과 추가 */
   }
   
   .caption {
