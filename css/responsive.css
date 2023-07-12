@@ -173,16 +173,11 @@ width:65%;
 		font-size:25px;
 	}
 	
-	
-		
-	
+
 	nav ul {
 	  margin: 0;
 	}
-	#owl-demo .item {
-		width: 80%;
-		height: 530px;
-	  }
+
 	/* Banner */
 	.banner-text {
 	  padding-top: 20%;
@@ -191,10 +186,7 @@ width:65%;
 	}
 	
 	/* Owl Carousel */
-	#owl-demo {
-	  padding-left: 10px;
-	  padding-right: 0;
-	}
+
 	.item{
 		width: 33.33%;
 		height: 550px;
@@ -202,7 +194,7 @@ width:65%;
 
 	  .promotion div {
 		flex-direction: column;
-		align-items: flex-start;
+		align-items:center;
 		/* margin-top: 20px; */
 	  }
 
@@ -210,7 +202,6 @@ width:65%;
 		margin-top: 5px;
 		width: 100px;
 	  }
-
 	.footer {
 		padding: 5%;
 	}
@@ -227,11 +218,30 @@ width:65%;
 	  margin: 5px;
 	}
 	/* 추가된 스타일 */
-		.circle ul {
-		flex-wrap: wrap;
-		}
+		/* table {
+			flex-wrap: wrap;
+			justify-content: center;
+		  }
 		
-		.circle img {
-		margin-bottom: 5%;
-		}
+		  td {
+			width: 50%; /* 3열로 변경 */
+		/*	max-width: 300px; /* 테이블의 최대 너비 설정 */
+			/*margin-bottom: 20px;
+		  } */
+
+			.dynamic h1 {
+			  font-size: 40px;
+			}
+			.dynamic p {
+			  font-size: 16px;
+			}
+			.book {
+			  flex-direction: column;
+			}
+			.book div {
+			  margin-bottom: 20px;
+			}
+			.book img {
+			  width: 50%;
+			}
 		}
