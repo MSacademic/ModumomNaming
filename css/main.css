@@ -447,7 +447,7 @@ dynamic
   }
   
   .dynamic p {
-	font-size: 20px;
+	font-size: 25px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -524,6 +524,7 @@ table{
 	justify-content: center;
 	border-spacing: 20px;
 	max-width: 100%;
+	width: 100%;
 }
 td {
 	background-color: #F7F7F7;
@@ -531,8 +532,7 @@ td {
 	border-radius: 20%;
 	font-weight: bold;
 	font-size: 15px;
-	width: 200px;
-  }
+	width: 100%;  }
 
 
 .service{
