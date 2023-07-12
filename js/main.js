@@ -9,7 +9,15 @@ $(document).ready(function() {
 			$('#header').removeClass('fixed');
 		}
 	});
+	// window.addEventListener('resize', adjustParagraphWidth);
 
+	// function adjustParagraphWidth() {
+	//   const containerWidth = document.querySelector('.container').offsetWidth;
+	//   const paragraph = document.querySelector('.dynamic-text');
+	//   paragraph.style.width = `${containerWidth}px`;
+	// }
+	
+	adjustParagraphWidth()
 // Owl Carousel
 	
       $("#owl-demo").owlCarousel({
